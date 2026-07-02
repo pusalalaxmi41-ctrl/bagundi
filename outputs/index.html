@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bagundhi | Godavari Maryada in Kukatpally</title>
+    <meta
+      name="description"
+      content="Bagundhi is a modern family restaurant in Kukatpally, Hyderabad serving Godavari-style food, fresh flavours, mocktails, desserts, and warm hospitality."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <a class="brand" href="#home" aria-label="Bagundhi home">
+        <img src="assets/bagundhi-logo.png" alt="Bagundhi logo" />
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+        <button class="nav-cart" id="openCart" type="button">Cart <span id="cartCount">0</span></button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-label="Bagundhi intro">
+        <div class="hero-video-stack" aria-hidden="true">
+          <video class="hero-clip is-active" src="assets/bagundhi-hero.mp4" autoplay muted loop playsinline></video>
+          <video class="hero-clip" src="assets/bagundhi-hero.mp4" muted loop playsinline></video>
+          <video class="hero-clip" src="assets/bagundhi-hero.mp4" muted loop playsinline></video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Kukatpally, Hyderabad</p>
+          <h1 class="shiny-text">BAGUNDHI</h1>
+          <h2>Serving Godavari Maryada</h2>
+          <p class="hero-copy">Fresh flavours, warm hospitality, and a dining experience that feels truly Bagundhi.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary ripple" href="#menu">View Menu</a>
+            <a class="btn btn-glow ripple" href="https://wa.me/919989958282" target="_blank" rel="noreferrer">Order on WhatsApp</a>
+            <a
+              class="btn btn-soft ripple"
+              href="https://www.google.com/maps/dir/?api=1&destination=Bagundhi%2C%20Addagutta%20Society%2C%20Western%20Hills%2C%20Jal%20Vayu%20Vihar%2C%20Kukatpally%2C%20Hyderabad%20500085"
+              target="_blank"
+              rel="noreferrer"
+              >Get Directions</a
+            >
+          </div>
+          <div class="hero-tabs" aria-label="Hero video scenes">
+            <button class="scene-dot is-active" data-scene="0">Exterior</button>
+            <button class="scene-dot" data-scene="1">Ambience</button>
+            <button class="scene-dot" data-scene="2">Brand</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-band reveal">
+        <div>
+          <span>4.6</span>
+          <p>Google rating</p>
+        </div>
+        <div>
+          <span>125</span>
+          <p>reviews</p>
+        </div>
+        <div>
+          <span>12 AM</span>
+          <p>open until</p>
+        </div>
+        <div>
+          <span>₹1-200</span>
+          <p>per person</p>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="gallery">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Real Bagundhi moments</p>
+          <h2>Gallery</h2>
+          <p>Exterior glow, menu details, food shots, warm seating textures, and ambience inspired by the real restaurant.</p>
+        </div>
+        <div class="masonry-gallery">
+          <button class="gallery-item tall reveal" data-title="Bagundhi exterior glow" data-img="assets/bagundhi-exterior-map.png">
+            <img src="assets/bagundhi-exterior-map.png" alt="Bagundhi restaurant exterior" />
+            <span>Exterior</span>
+          </button>
+          <button class="gallery-item reveal" data-title="Mocktails and desserts menu" data-img="assets/menu-desserts-mocktails.png">
+            <img src="assets/menu-desserts-mocktails.png" alt="Bagundhi mocktails desserts menu" />
+            <span>Mocktails</span>
+          </button>
+          <button class="gallery-item reveal" data-title="Crispy starter" data-img="assets/food-starter-paneer.png">
+            <img src="assets/food-starter-paneer.png" alt="Bagundhi starter dish" />
+            <span>Starters</span>
+          </button>
+          <button class="gallery-item wide reveal" data-title="Full menu spread" data-img="assets/menu-full.png">
+            <img src="assets/menu-full.png" alt="Bagundhi printed menu" />
+            <span>Menu</span>
+          </button>
+          <button class="gallery-item reveal" data-title="Godavari biryani bowl" data-img="assets/food-biryani.png">
+            <img src="assets/food-biryani.png" alt="Bagundhi biryani" />
+            <span>Biryani</span>
+          </button>
+          <button class="gallery-item reveal" data-title="Fresh starter bowl" data-img="assets/food-starter-corn.png">
+            <img src="assets/food-starter-corn.png" alt="Bagundhi fresh starter" />
+            <span>Food</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="about-media reveal">
+          <img src="assets/bagundhi-exterior-map.png" alt="Bagundhi exterior with logo lighting" />
+          <div class="glass-note">
+            <strong>Godavari Maryada</strong>
+            <span>Fresh food, easy comfort, and a bright modern dining room for families.</span>
+          </div>
+        </div>
+        <div class="about-copy reveal">
+          <p class="eyebrow">Our story</p>
+          <h2>A warm modern table for Godavari-style cravings.</h2>
+          <p>
+            Bagundhi brings the comfort of Godavari hospitality into a clean, family-friendly restaurant in Kukatpally.
+            Expect fresh flavours, generous plates, lively mocktails, and a polished ambience with soft greens, warm
+            woods, glowing aqua accents, and welcoming staff.
+          </p>
+          <p>
+            It is built for relaxed dinners, quick celebrations, and food that feels familiar without losing its modern
+            shine.
+          </p>
+        </div>
+      </section>
+
+      <section class="section signature-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Signature plates</p>
+          <h2>Premium Food Cards</h2>
+          <p>Large polished placeholders are ready for your real food photos.</p>
+        </div>
+        <div class="signature-grid" id="signatureGrid"></div>
+      </section>
+
+      <section class="section menu-section" id="menu">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Dine-in menu</p>
+          <h2>Choose Your Favourites</h2>
+          <p>Browse Bagundhi categories, add items to cart, and checkout directly on WhatsApp.</p>
+        </div>
+        <div class="category-pills" id="categoryPills"></div>
+        <div class="menu-grid" id="menuGrid"></div>
+      </section>
+
+      <section class="section reviews-section" id="reviews">
+        <div class="reviews-summary reveal">
+          <div>
+            <p class="eyebrow">Google-style reviews</p>
+            <h2>4.6 <span>★★★★★</span></h2>
+            <p>125 reviews praising ambience, staff service, decor, lighting, vibe, and extraordinary food.</p>
+          </div>
+          <img src="assets/bagundhi-reviews.png" alt="Bagundhi review summary screenshot" />
+        </div>
+        <div class="review-cards">
+          <article class="review-card reveal">
+            <span>5.0</span>
+            <h3>Wonderful ambience</h3>
+            <p>"Wonderful ambience, great staff service, good food is extraordinary."</p>
+          </article>
+          <article class="review-card reveal">
+            <span>5.0</span>
+            <h3>Great vibe</h3>
+            <p>"I truly enjoyed the overall vibe of the restaurant."</p>
+          </article>
+          <article class="review-card reveal">
+            <span>4.8</span>
+            <h3>Decor and lighting</h3>
+            <p>"From the moment we walked in, the decor and lighting set such a great mood."</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Visit us</p>
+          <h2>Bagundhi, Kukatpally</h2>
+        </div>
+        <div class="contact-layout">
+          <a
+            class="map-card reveal"
+            href="https://www.google.com/maps/dir/?api=1&destination=Bagundhi%2C%20Addagutta%20Society%2C%20Western%20Hills%2C%20Jal%20Vayu%20Vihar%2C%20Kukatpally%2C%20Hyderabad%20500085"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Open Bagundhi directions on Google Maps"
+          >
+            <img src="assets/bagundhi-contact-map.png" alt="Bagundhi location details preview" />
+          </a>
+          <div class="contact-card reveal">
+            <h3>Bagundhi</h3>
+            <p>Addagutta Society, Western Hills, Jal Vayu Vihar, Kukatpally, Hyderabad, Telangana 500085</p>
+            <ul>
+              <li><strong>Phone:</strong> +91 99899 58282</li>
+              <li><strong>Hours:</strong> Open until 12 AM</li>
+              <li><strong>Price:</strong> ₹1-200 per person</li>
+            </ul>
+            <div class="contact-actions">
+              <a class="btn btn-soft ripple" href="tel:+919989958282">Call Now</a>
+              <a class="btn btn-glow ripple" href="https://wa.me/919989958282" target="_blank" rel="noreferrer">WhatsApp Order</a>
+              <a
+                class="btn btn-primary ripple"
+                href="https://www.google.com/maps/dir/?api=1&destination=Bagundhi%2C%20Addagutta%20Society%2C%20Western%20Hills%2C%20Jal%20Vayu%20Vihar%2C%20Kukatpally%2C%20Hyderabad%20500085"
+                target="_blank"
+                rel="noreferrer"
+                >Get Directions</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button class="floating-whatsapp" id="floatingWhatsApp" type="button" aria-label="Open WhatsApp order">WhatsApp</button>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping cart">
+      <div class="cart-panel">
+        <div class="cart-head">
+          <div>
+            <p class="eyebrow">Your Bagundhi cart</p>
+            <h2>Order Summary</h2>
+          </div>
+          <button class="close-cart" id="closeCart" type="button" aria-label="Close cart">×</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <form class="checkout-form" id="checkoutForm">
+          <label>
+            Name
+            <input id="customerName" required placeholder="Your name" />
+          </label>
+          <label>
+            Phone
+            <input id="customerPhone" required placeholder="Your phone number" />
+          </label>
+          <label>
+            Address or pickup note
+            <textarea id="customerAddress" required placeholder="Delivery address or Pickup"></textarea>
+          </label>
+          <label class="select-label">
+            Order type
+            <select id="orderType">
+              <option>Delivery</option>
+              <option>Pickup</option>
+              <option>Dine-in enquiry</option>
+            </select>
+          </label>
+          <div class="cart-total">
+            <span>Total</span>
+            <strong id="cartTotal">₹0</strong>
+          </div>
+          <button class="btn btn-primary ripple checkout-btn" type="submit">Checkout on WhatsApp</button>
+        </form>
+      </div>
+    </aside>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button id="closeLightbox" type="button" aria-label="Close preview">×</button>
+      <img id="lightboxImg" alt="" />
+      <p id="lightboxTitle"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
